@@ -9,7 +9,23 @@
 @implementation DSSCollectionViewLayout
 
 - (void)prepareForCollectionViewUpdates:(NSArray *)updateItems {
-    NSLog(@"%@", updateItems);
+    [UIView animateKeyframesWithDuration:0.3 delay:0.0 options:UIViewKeyframeAnimationOptionAllowUserInteraction | UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
+
+        for (UICollectionViewUpdateItem *item in updateItems) {
+
+            if (item.updateAction == UICollectionUpdateActionMove) {
+                UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:item.indexPathBeforeUpdate];
+
+                [UIView addKeyframeWithRelativeStartTime:0.0 relativeDuration:0.5 animations:^{
+                    cell.layer.transform = CATransform3DMakeScale(0.5, 0.5, 1.0);
+                }];
+                [UIView addKeyframeWithRelativeStartTime:0.5 relativeDuration:0.5 animations:^{
+                    cell.layer.transform = CATransform3DIdentity;
+                }];
+            }
+        }
+
+    } completion:nil];
 }
 
 @end
