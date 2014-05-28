@@ -22,6 +22,7 @@
 		B5591929193621150002871E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5591927193621150002871E /* InfoPlist.strings */; };
 		B559192B193621150002871E /* CollectionViewAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B559192A193621150002871E /* CollectionViewAnimationTestTests.m */; };
 		B5591936193621C50002871E /* DSSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5591935193621C50002871E /* DSSCell.m */; };
+		B5591939193626DA0002871E /* DSSCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5591938193626DA0002871E /* DSSCollectionViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		B559192A193621150002871E /* CollectionViewAnimationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewAnimationTestTests.m; sourceTree = "<group>"; };
 		B5591934193621C50002871E /* DSSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSCell.h; sourceTree = "<group>"; };
 		B5591935193621C50002871E /* DSSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSCell.m; sourceTree = "<group>"; };
+		B5591937193626DA0002871E /* DSSCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSCollectionViewLayout.h; sourceTree = "<group>"; };
+		B5591938193626DA0002871E /* DSSCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +120,13 @@
 			children = (
 				B559190E193621150002871E /* DSSAppDelegate.h */,
 				B559190F193621150002871E /* DSSAppDelegate.m */,
-				B5591911193621150002871E /* Main.storyboard */,
 				B5591914193621150002871E /* DSSViewController.h */,
 				B5591915193621150002871E /* DSSViewController.m */,
 				B5591934193621C50002871E /* DSSCell.h */,
 				B5591935193621C50002871E /* DSSCell.m */,
+				B5591937193626DA0002871E /* DSSCollectionViewLayout.h */,
+				B5591938193626DA0002871E /* DSSCollectionViewLayout.m */,
+				B5591911193621150002871E /* Main.storyboard */,
 				B5591917193621150002871E /* Images.xcassets */,
 				B5591906193621150002871E /* Supporting Files */,
 			);
@@ -259,6 +264,7 @@
 				B5591910193621150002871E /* DSSAppDelegate.m in Sources */,
 				B5591936193621C50002871E /* DSSCell.m in Sources */,
 				B5591916193621150002871E /* DSSViewController.m in Sources */,
+				B5591939193626DA0002871E /* DSSCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +469,7 @@
 				B5591930193621150002871E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5591931193621150002871E /* Build configuration list for PBXNativeTarget "CollectionViewAnimationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +478,7 @@
 				B5591933193621150002871E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
